@@ -43,7 +43,7 @@ class Audiencia extends React.Component {
                 <Segment basic style={{padding: '7em', backgroundColor:'#45597D'}} />
                 <Container style={{backgroundColor: 'white', paddingBottom: '1.5em', marginBottom:'5em', borderRadius: '5px', transform: 'translateY(-100px)' }}>
                     <Segment basic>
-                        <Grid columns={2}>
+                        <Grid columns={2} stackable>
                             <Grid.Column>
                                 <Header as='h1'>{this.props.audiencia.audiencia.titulo}</Header>
                                 <Header as='h2'>Motivação</Header>
@@ -84,8 +84,11 @@ class Audiencia extends React.Component {
                                         <Icon size='large' name='map marker' />
                                         {this.props.audiencia.audiencia.local}
                                     </p>
+                                    <Segment basic textAlign='center'>
 
-                                    <iframe width="353" height="220" src="https://maps.google.com/maps?q=forum&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                                    <iframe height="220" width="80%" src="https://maps.google.com/maps?q=forum&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                                    </Segment>
+
 
                                     <Modal style={{transform:"translateY(-170px)", height:'53%'}} trigger={<Button primary fluid style={{marginTop:'10px',backgroundColor:'#45597D', color:'#fff'}}>Tenho interesse!</Button>}>
                                         <Modal.Header>Entrar na lista de interessados na audiência</Modal.Header>

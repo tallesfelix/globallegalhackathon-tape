@@ -8,11 +8,11 @@ class Footer extends React.Component {
             <Container style={{ marginTop: '15px' }}>
               <Grid divided stackable>
                 <Grid.Row>
-                  <Grid.Column width={6} verticalAlign='middle'>
-                    <Image src='logo'  size='small' style={{}}/>
+                  <Grid.Column width={14} verticalAlign='middle'>
+                    <Image src='/logo.jpeg'  size='small' style={{}}/>
                   </Grid.Column>
 
-                  <Grid.Column width={4}>
+                  <Grid.Column width={2}>
                     <Header as='h4'>
                       Redes:
                     </Header>
@@ -38,7 +38,7 @@ class Footer extends React.Component {
                 </Grid.Row>
               </Grid>
               <Segment textAlign='center' basic style={{fontFamily:'Roboto Condensed'}}>
-                Facile | Todos os direitos reservados.
+                tape. | Todos os direitos reservados.
               </Segment>
             </Container>
           </Segment>

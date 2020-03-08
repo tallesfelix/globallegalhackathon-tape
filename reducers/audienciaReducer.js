@@ -59,7 +59,7 @@ const initialState = {
             email:'talles@email.com',
             telefone: '9999999999'
         }],
-        status: 'futura'
+        status: 'passada'
     },
     {
         id:4,

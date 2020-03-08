@@ -19,7 +19,7 @@ class MinhasAudiencias extends React.Component {
                 <Segment basic style={{padding: '7em', backgroundColor:'#DB5461'}} />
 
                 <Container style={{paddingTop: '2em', backgroundColor: 'white', paddingBottom: '1.5em', marginBottom:'5em', borderRadius: '5px', transform: 'translateY(-100px)' }}>
-                        <Header as='h1'>Audiências futuras</Header>
+                        <Header as='h1'>Minhas audiências futuras</Header>
 
                         <Card.Group stackable itemsPerRow={3}>
 

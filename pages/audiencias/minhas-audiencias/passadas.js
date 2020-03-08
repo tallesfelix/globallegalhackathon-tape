@@ -19,7 +19,7 @@ class AudienciasPassadas extends React.Component {
                 <Segment basic style={{padding: '7em', backgroundColor:'#DB5461'}} />
 
                 <Container style={{paddingTop: '2em', backgroundColor: 'white', paddingBottom: '1.5em', marginBottom:'5em', borderRadius: '5px', transform: 'translateY(-100px)' }}>
-                        <Header as='h1'>Audiências passadas</Header>
+                        <Header as='h1'>Minhas audiências passadas</Header>
                         <Card.Group stackable itemsPerRow={3}>
 
                             {this.props.audiencia.audiencias.map(audiencia => (
@@ -58,7 +58,7 @@ class AudienciasPassadas extends React.Component {
                                             </Card.Description>
                                         </Card.Content>
                                         <Card.Content extra>
-                                            <Link href={{pathname:'/audiencias/minhas-audiencias/convite', query:{id: audiencia.id}}} >
+                                            <Link href={{pathname:'/audiencias/minhas-audiencias/relatorio', query:{id: audiencia.id}}} >
                                                 <Button primary fluid onClick={() => this.props.setAudiencia(audiencia.id)}>
                                                     Mais informações
                                                 </Button>

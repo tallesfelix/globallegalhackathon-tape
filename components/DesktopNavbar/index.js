@@ -25,13 +25,15 @@ class DesktopNavbar extends Component {
                     <Visibility once={false} onBottomPassed={this.showFixedMenu} onBottomPassedReverse={this.hideFixedMenu}>
                         <Menu borderless fixed='top' size='small' >
                             <Container>
-                                <Menu.Item as='a' name='home' onClick={() => this.handleItemClick('home')}>
-                                    <Image
-                                    size="small"
-                                    src="/logo.jpeg"/>
-                                </Menu.Item>
+                                <Link href='/'>
+                                    <Menu.Item as='a'>
+                                        <Image
+                                        size="small"
+                                        src="/logo.jpeg"/>
+                                    </Menu.Item>
+                                </Link>
                                 <Menu.Menu position='right'>
-                                    <Link href='/audiencias/feed'>
+                                    <Link href='/'>
                                         <Menu.Item as ='a' header>
                                             Agenda
                                         </Menu.Item>
@@ -46,7 +48,10 @@ class DesktopNavbar extends Component {
                                     } item simple className='link item'>
                                     <Dropdown.Menu>
                                         <Link href='/audiencias/minhas-audiencias/futuras'>
-                                            <Dropdown.Item>Minhas audiencias</Dropdown.Item>
+                                            <Dropdown.Item>Minhas audiencias futuras</Dropdown.Item>
+                                        </Link>
+                                        <Link href='/audiencias/minhas-audiencias/passadas'>
+                                            <Dropdown.Item>Minhas audiencias passadas</Dropdown.Item>
                                         </Link>
                                         <Link href='/audiencias/nova'>
                                             <Dropdown.Item>Agendar audiencia</Dropdown.Item>

@@ -27,14 +27,17 @@ class MobileNavbar extends Component {
             icon='labeled'
           >
               <>
-                <Link href='/audiencias/feed'>
+                <Link href='/'>
                   <Menu.Item position='left' as='a'>Agenda</Menu.Item>
                 </Link>
-                <Link href='/audiencias/minhas-audiencias'>
-                  <Menu.Item as='a'>Minhas audiencias</Menu.Item>
+                <Link href='/audiencias/minhas-audiencias/futuras'>
+                  <Menu.Item as='a'>Minhas audiencias futuras</Menu.Item>
+                </Link>
+                <Link href='/audiencias/minhas-audiencias/passadas'>
+                  <Menu.Item as='a'>Minhas audiencias passadas</Menu.Item>
                 </Link>
                 <Link href='/audiencias/nova'>
-                  <Menu.Item as='a'>Cadastrar audiencia</Menu.Item>
+                  <Menu.Item as='a'>Agendar audiencia</Menu.Item>
                 </Link>
               </>
           </Sidebar>
@@ -42,11 +45,11 @@ class MobileNavbar extends Component {
             <Segment
               basic
               textAlign='center'
-              style={{ padding: '0.5em 0em', cursor: 'pointer' }}
+              style={{ padding: '0em 0em', cursor: 'pointer' }}
               vertical
             >
               <Container>
-                <Menu pointing secondary size='mini'>
+                <Menu secondary size='mini'>
                   <Menu.Item onClick={this.handleToggle}>
                     <Icon name='sidebar' />
                   </Menu.Item>

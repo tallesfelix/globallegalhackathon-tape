@@ -10,11 +10,11 @@ import PageContainer from '../PageContainer'
 class FeedHeader extends React.Component {
     render() {
         return (
-            <Segment basic style={{padding: '7em', marginTop: '30px', backgroundImage:'url(/audiencias.jpg)', backgroundAttachment: 'fixed',backgroundSize:'cover', backgroundRepeat: 'no-repeat', backgroundPosition:'center'}}>
+            <Segment basic style={{padding: '7em', backgroundImage:'url(/audiencias.jpg)', backgroundAttachment: 'fixed',backgroundSize:'cover', backgroundRepeat: 'no-repeat', backgroundPosition:'center'}}>
                 <Grid container stackable verticalAlign='middle'>
                     <Grid.Row>
-                        <Grid.Column>
-                            <Header as='h3' style={{ fontSize: '3em', color:'#FFFF', marginTop:'25px' }}>
+                        <Grid.Column computer={10} tablet={16} mobile={16}>
+                            <Header as='h3' style={{ fontSize: '3em', color:'#FFFF', marginTop:'15px' }}>
                                 Encontre as próximas <br/> audiências públicas
                             </Header>
                             <p style={{ fontSize: '1.7em', color:'#FFFF' }}>

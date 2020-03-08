@@ -75,12 +75,12 @@ class Convite extends React.Component {
                         </Grid>
 
                         
-                        <Modal style={{transform:"translateY(-170px)", height:'30%'}} trigger={<Button fluid style={{ color: '#fff', backgroundColor:'#45597D'}}>Encerrar audiencia</Button>}>
+                        <Modal style={{transform:"translateY(-170px)", height:'20%'}} trigger={<Button fluid style={{ color: '#fff', backgroundColor:'#45597D'}}>Encerrar audiencia</Button>}>
                             <Modal.Header>Tem certeza que deseja encerrar audiencia?</Modal.Header>
                             <Modal.Content>
                             <Modal.Description>
                                 <p>Ao encerrar a audiencia, as atas serão enviadas aos presentes via email.</p>
-                                <Button fluid style={{backgroundColor:'#45597D', color:'#fff'}}>Confirmar interesse</Button>
+                                <Button fluid style={{backgroundColor:'#45597D', color:'#fff'}}>Confirmar</Button>
                             </Modal.Description>
                             </Modal.Content>
                         </Modal>
