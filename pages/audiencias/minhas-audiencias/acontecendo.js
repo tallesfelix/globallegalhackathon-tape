@@ -1,9 +1,7 @@
 //Dependecies
 import React, { Component } from 'react'
 import axios from 'axios'
-import CKEditor from '@ckeditor/ckeditor5-react'
 import { connect } from 'react-redux'
-import ClassicEditor from '@ckeditor/ckeditor5-build-classic';
 import ataTemplate from '../../../util/ataTemplate'
 var QRCode = require('qrcode.react');
 
@@ -23,6 +21,11 @@ class Convite extends React.Component {
         this.state = {
           ataReuniao: ''
         }
+    }
+
+    componentDidMount() {
+        this.CKEditor = require('@ckeditor/ckeditor5-react')
+        this.ClassicEditor = require('@ckeditor/ckeditor5-build-classic')
     }
 
     static async getInitialProps({query}) {
@@ -55,11 +58,13 @@ class Convite extends React.Component {
                             <Grid.Row>
                                 <Grid.Column width={16}>
                                     <Header as='h1'>Ata da audiencia</Header>
-                                    <CKEditor
-                                        editor={ ClassicEditor }
-                                        data={ataTemplate}
-                                        onBlur={this.handleEditorChange()}
-                                    />
+                                    {this.CKEditor && 
+                                        <CKEditor
+                                            editor={ ClassicEditor }
+                                            data={ataTemplate}
+                                            onBlur={this.handleEditorChange()}
+                                        />
+                                    }
                                 </Grid.Column>
                             </Grid.Row>
                         </Grid>
