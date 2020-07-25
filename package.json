@@ -13,7 +13,7 @@
     "axios": "^0.19.2",
     "ckeditor4-react": "^1.1.0",
     "googleapis": "^39.2.0",
-    "next": "9.2.2",
+    "next": "9.3.2",
     "qrcode.react": "^1.0.0",
     "react": "16.13.0",
     "react-dom": "16.13.0",
