@@ -15,7 +15,7 @@ This is a NextJS app built on Global Legal Hackathon 2020 - Fortaleza - CE and c
 ## :computer: Technologies
 This project was built with the following technologies:
 - [Node.js](https://nodejs.org/en/)
-- [React](https://reactjs.org)
+- [NextJs](https://nextjs.org/)
 
 ## :exclamation: The project
 Tape is an web app made for creation, publicity and management of public audiences.
