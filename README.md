@@ -4,12 +4,10 @@
   <img alt="Frontend" src=".github/mockup.png" width="100%">
 </p>
 
-<center>
+<p align='center'>
 <img alt="License" src="https://img.shields.io/badge/made%20by-tallesfelix-brightgreen">
 <img alt="License" src="https://img.shields.io/github/languages/top/tallesfelix/globallegalhackathon-tape">
-
-
-</center>
+</p>
 
 This is an NextJS app built on Global Legal Hackathon 2020 - Fortaleza - CE and considered the **second best idea** by the event judges.
 
