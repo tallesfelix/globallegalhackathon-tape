@@ -9,7 +9,7 @@
 <img alt="License" src="https://img.shields.io/github/languages/top/tallesfelix/globallegalhackathon-tape">
 </p>
 
-This is an NextJS app built on Global Legal Hackathon 2020 - Fortaleza - CE and considered the **second best idea** by the event judges.
+This is a NextJS app built on Global Legal Hackathon 2020 - Fortaleza - CE and considered the **second best idea** by the event judges.
 
 
 ## :computer: Technologies
